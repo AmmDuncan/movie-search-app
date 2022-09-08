@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://www.omdbapi.com/";
+const baseUrl = "https://www.omdbapi.com/";
 const apiKey = "7b141d6f";
 
 function searchMovie(searchPhrase, page = 1) {
