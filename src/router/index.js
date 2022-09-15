@@ -9,6 +9,7 @@ const routes = [
     component: HomeView,
   },
   {
+    props: true,
     path: "/:movieId",
     name: "SingleMovie",
     component: SingleMovieView,

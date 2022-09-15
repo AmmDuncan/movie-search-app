@@ -55,6 +55,7 @@ import { mapState } from 'vuex';
 import LoadingState from '@/components/LoadingState.vue';
 export default {
   name: "SingleMovieView",
+  props: ["movieId"],
   created() {
     this.fetchMovie();
   },
@@ -63,7 +64,7 @@ export default {
   },
   methods: {
     fetchMovie() {
-      const movieId = this.$route.params.movieId;
+      const movieId = this.movieId;
       this.$store.dispatch("fetchSingleMovie", movieId);
     },
     goBack() {
